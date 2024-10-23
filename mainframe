@@ -1,0 +1,442 @@
+[200~12DOCUMENTS
+
+Hi Team,
+ FYI. we are facing issues  in Service Now. Facing slowness in Service now
+
+Alcs qual high load alerts can drop mail it is a single occurence.
+
+Alcs Live High load we need to raise ticket and drop mail. ************************* Important.
+
+2ND Saturday of every month stop& start. --15:30 - 15:45 ---
+
+
+mq channel ---13=mq=1=search for particular channel -
+
+1.Astral Stop/Start================================================================================pass123@ for printer restart
+2.Alcs warning messege docmnt
+3.ALCS OBE RESTORE
+4.PWCKSYSX ACTIVE Password check on SYSX        Y   N   N   N   31-MAY 08.00
+    every wednesday job need to chk in sarl jc for completion then we neeed (su & del).
+5.zdtcp d svc=ssk,all   =CSK,ALL in flbk------Check FASTPASS mgr
+6.*08.58.22          *AOM014B(QUADSB01) ** LOAD NITB TAPE TO ASTRAL AFTER 7PM
+7.07.20.29 STC24480  +DXC3085 L ALCSLIVE PNL CHECK - SEND TIMING ERROR FOR
+EI0423/20JUN   -------------------------PNL ALERT.--------------------------INC0996522-P3  if not reach make it p2.
+8.Check FASTPASS mgr----	08:15	zdtcp d svc=ssk,all   =CSK,ALL in flbk
+9.INC1096665--Unbale to access Static and desktop session from VDI
+10.INC1042356--Unable to Login into AIMS Printer ---raise p3 to flight ops - drop mail make callout.
+11.For stopping scheduler --P SCHEDULR
+For starting Scheduler – S SCHEDULR
+12.kdx--in prc Just give only    (KDX) IN PRC.
+13.$r xeq,j=’ALCSFTP’,d=aeasysa     --use this command to route if any job is in queued state--and this command need to be issue in SYSB.
+14.Primecras On Call
+   Vijay  contact: +91 8247752153, Time : 17:00 - 02:00
+15.Was DCC file processed ? (14th of mth)  cmd = ZADCC D---
+         ZADCC D                                                                        
+ *********(DCC0019I 16.38.06 Most recent Successful ZADCC LOAD Entries:                   
+                                                                                
+ Sequential File to Fix File Loaded         14Apr24 06.19.37z                   
+ Fix File to Secondary Table Loaded         14Apr24 06.19.37z                   
+ Secondary Table Promoted to Primary Table  14Apr24 06.19.37z))*****************************
+
+
+16.zalog xlg=start                             
+ALG0005W 17.12.32 Exception logging now star
+zsseq log                                   
+DXC8655I CMD L  17.12.49 SSEQ               
+Sequential file LOG switch request accepted 
+zalog xlg=stop                              
+ALG0006I 17.19.47 Exception logging now stop
+zsseq log                                   
+DXC8655I CMD L  17.19.56 SSEQ               
+Sequential file LOG switch request accepted 
+
+
+15.yxdct vaal
+         vaaz
+         vaas
+
+16. browse the job.--M - b job name second line no job --fn + f11 Go forward
+
+
+*19.00.48          *AOM047(DXC5RTA) ** POSSIBLE EXCESSIVE ALCSLIVE RTA  
+* SWITCHING                                                             
+*19.00.48          *AOM047(DXC5RTA) ** IF PROBLEM PERSISTS CONTACT ALCS 
+* COVERAGE                                                              
+*19.02.05          *AOM126(OPSMVS) ** PFJ HAS COMPLETED                 
+*19.02.24          *AOM126(OPSMVS) ** PFN HAS COMPLETED                 
+*19.07.53          *AOM126(OPSMVS) ** PFA HAS COMPLETED                 
+ 19.16.04 STC24480  +DXC3011 L ALCSLIVE PRSM RUN COMPLETE - RELEASE     
+  ALCSD12 AND ALCSD17                                                   
+
+
+12.00.01.31 STC02930  IEF450I DCPUP IEFPROC DCPUP - ABEND=S222 U0000   
+REASON=00000000                                                     
+
+       IME=00.01.31   -----------------------SYSA                                             
+
+  00.01.43 STC24879  IEF450I DCPUP IEFPROC DCPUP - ABEND=S222 U0000        
+
+  REASON=00000000                                                         
+
+         TIME=00.01.43    ------sysb             DPS
+​
+​
+GR_EI_Tech_BSA_Team
+​                                   
+
+
+Thank you for your quick response
+Few points bro , we need to loop IM in any P2 mail . 
+
+when ever any ticket is raised in Third party we need assign it your your name and mark it as in Progress.
+Then you send mail to support and callout to them , Ensure all the points are added in the ticket and then mark it as ON HOLD(The option will come when the ticket is in Progress) .
+once after the support confirms the issue is resolved in our case the PNL is sent update that also in ticket and then resolve it
+
+
+1.alcs warning messege docmnt
+2.ALCS OBE RESTORE
+3.TSM-Missed/failed backups-------INFRASUP_BACKUP_DUB ---
+4.ZDSYS--------------To check wheather system is normal or not for (TEST,QUAL,OBE).
+5.Spool Percentage SYSA-18.78 % , SYSB- 16.15% , SYSX- 16.19%---(if beyond 25 drop mail  30 can p3 above 50  p2 mvs team.)
+6.Current Vtape scratch level=7386.
+7.TSM-Missed/failed backups-------INFRASUP_BACKUP_DUB --
+8. mvs v tcsabkup,console in OPSMVSA+DXC3100I ALCSLIVE Long Queue Detected on CRN DXCROC
+   mvs v tcsbbkup,console in OPSMVSB-----------------To vary consoles sys A & B Consoles----(THROUGH Solve screen.)
+
+  MVS V,TCSAMAST,CONSOLE----MAST CONSOLE
+MVS V,TCSBMAST,CONSOLE----MAST CONSOLE,,   mvs v 601d,console.  (k s,del=rd).for read mode
+
+MVS V,TCSAMAST,CONSOLE----MAST CONSOLE 
+Vijaya@1995
+from sysa mast we need to vary--------  v tcsabkup,console---enter.
+from sysb mast we need to vary--------  v tcsbbkup,console---enter.
+(v 701d,console). for bkup
+
+
+mvs v 601d,console.
+
+Warm regards,
+Vijayakumar,
+ph:8247752153/7659049604
+Aer Lingus - IT Operations(TCS),
+Email: Vijayakumarkumarkaluva@aerlingus.com
+TCS Siru Seri, EB2 – 4th Floor, NW, Chennai.
+ 
+
+9.Business hrs -9:00 - 17:15 bst 
+(Aer Lingus Callout Recording from 13th March  2023 to 19th March2023 
+10.*08.58.22     *AOM014B(QUADSB01) ** LOAD NITB TAPE TO ASTRAL AFTER 7PM-----It will come every satuarday 
+
+we need to chk wheather the job is finished or not.
+
+if we do not recive drop  a mail go alcs team.
+
+10.LIVE LOADS nee to be give in PRC
+
+   ZPCTL L S DXCR858                                    
+   ADDITIONAL SLOT DATA                                 
+   DXC8340I CMD L  11.08.57 PCTL                        
+   Module MODN-'DXCR858' loaded by CRN-'ALCLSPRC' 
+11.To take authority from PRC TO FLBK Give cmnd in flbk (zacom n=*,ca=prc)
+   
+11.sudo ./run_ssim_flight_service_staging.sh-----to run ssim in putty
+12.20.00.29 STC24480  +DXC3100I ALCSLIVE Long Queue Detected on CRN DXCROC-------------- NEED DO CHK IN PRC OR FLBK-(ZDCOM N=DXCROC,D).check 
+messages on queue pri 8--if q is increasing we have to reset the printer. (zacom n=crn,reset) we can chk in Alcs warning docmt.
+13*15.16.00          *AOM193(MQCHECK) ** MQ LIVE (EMEEMEAP1.TO.MQSL) IN      
+* TROUBLE--------------we can ignore this alert completely.
+*19.46.00          *AOM193(MQCHECK) ** MQ LIVE (EMEEMEAP1.TO.MQSL) IN  
+* TROUBLE
+14. browse the job.--M - b job name second line no job --fn + f11 Go forward                                                              
+15.Check for successful completion of SPL / OPL.
+
+
+
+1.printer Restart.---aimsprint/pass12@-------- INC1583876- Raise p4 to - OPSSUP_ALCS
+2.ALCSLIVE RECOUP.
+3.Scheduler Struck
+4.spool percentage.
+5.CRN alert
+6.LOG SWAP
+7.NIT LOAD
+8.SAVESPIN ERROR --Job Failure at 3:00  
+9.PNL CHECK.
+10.MQ CHANNEL ALERT:
+11.Mark job as completed.
+12.$dspl,jobs=3 Give this cmnd when spool per increase above 30  will raise p3 above 50 raise p2.
+13.DXC3050 L ALCSLIVE LINK TO REALEX DOWN
+14. schduler struck
+15.Check for successful completion of SPL / OPL
+16. Payment alerts we need to check CA/DISPLAY
+
+Full Virtual Desktop (Vdi)Via https://connect.aerlingus.comURL(Ping ID)
+16.\\10.255.150.48\share\AIMS\AMOS-OUT) ---- AMOS Flight Times Feed Down---INC1572092- P2 for third pary make call out to fleet desk team.
+17.12.20.00.29 STC24480  +DXC3100I ALCSLIVE Long Queue Detected on CRN DXCROC-------------- NEED DO CHK IN PRC OR FLBK-(ZDCOM N=DXCROC,D).check 
+messages on queue pri 8--if q is increasing we have to reset the printer. (zacom n=crn,reset) we can chk in Alcs warning docmt.
+
+1)
+--------------printer restart
+0000
+Details
+Received below alert in SYSB,
+12.25.16 STC23587  +DXC3100I ALCSLIVE Long Queue Detected on CRN PDUBR987
+12.30.16 STC23587  +DXC3100I ALCSLIVE Long Queue Detected on CRN PDUBR987
+12.35.16 STC23587  +DXC3100I ALCSLIVE Long Queue Detected on CRN PDUBR987 --INC1511582- Raise p4 to - OPSSUP_ALCS
+
+10:32 Ops restarted the AIMS Movement printer as per AIMS Robotic Process.
+10:35 Alert Stopped Appearing in SYSB
+
+SYS B - Printer alert-Manual command - ZACOM N=PDUBR987,RESET  
+ 
+Rather than restarting the emulator, can you try this in the future please.
+When you do the reset, you can display the printer queue using YXDCT PAIM. If you repeat this entry, you should see the queue reducing
+If the reset does not work then you can restart the emulator as per previous instructions
+
+  
+
+AIMSPRINT - Account Locked --If account locked pls check with EI windows team Then check with Flight Ops Team
+ 
+
+Actions
+12:36 Ops restarted the Printer Manually as per the AIMS Robotic process.
+12:40 Alerts stopped appearing in SYSB.----)-----------------------------INC1511582- Raise p4 to - OPSSUP_ALCS
+
+
+2.
+ZDSYS--------------To check wheather system is normal or not for (TEST,QUAL,OBE).------PGUP(1,2,5)
+
+
+
+2)-------ALCSLIVE RECOUP
+Ticket Ref. Number
+0000
+Details
+ALCSLIVE RECOUP
+Actions
+19:30 ALCSLIVE Recoup Started.
+20:40 ALCSLIVE Recoup Completed.
+Updates---------
+
+
+
+3) Scheduler Struck-----------
+       No Schedule got executed after 00:00
+
+11.For stopping scheduler --P SCHEDULR
+For starting Scheduler – S SCHEDULR
+
+
+
+**********sysa
+/rom
+schudler
+give tri it will go go inactive both desire and 
+trr*************
+
+
+*00.15.06          *AOM191($JAFTP) ** SCHEDULER UNABLE TO SUBMIT SCHEDUL
+* - SCHEDERR                                                            
+*00.15.06          *AOM191($JAFTP) ** ADVISE DATA CONTROL (IF AVAILABLE)
+                                                 
+                                                    
+                                                                   
+
+
+       	
+00:06 Ops manually stopped the Scheduler in SYSA Resource Monitor using TRI as per earlier communication.
+00:08 Ops started the Scheduler in SYSA manually using the TRR Command.
+00:10 Scheduler was stable and started executing the Schedules.
+00:23 Ops dropped a mail to Gerhard and Julius.------------
+
+
+
+4) 	
+INC0904095 - P3
+Details
+Spool Percentage on SYSB
+
+$dspl,jobs=2
+
+SYSB SPOOL Percentage is More than agreed Level 
+
+00- 00.31.43           $dspl                                              
+     00.31.43           $HASP893 VOLUME(LBSPL0)  STATUS=ACTIVE,PERCENT=46  
+     00.31.43           $HASP893 VOLUME(LBSPL1)  STATUS=ACTIVE,PERCENT=46  
+     00.31.43           $HASP646 46.2900 PERCENT SPOOL UTILIZATION 
+Actions
+00:35 Ops raised P3 and assigned to IBM MVS SA Team.
+00:39 Ops dropped mail to IBM MVS SA Team.
+01:06 Ops dropped mail to IBM MVS SA Team as SYSView Job is consuming high spool percentage on SYSB.
+Updates
+
+
+5)
+18.04.44 STC22116  +DXC3010 L ALCSLIVE TCPIP CLIENT CONNECTION INACTIVE  
+
+
+22.14.42 STC24480  +DXC3010 L ALCSLIVE TCPIP CLIENT CONNECTION INACTIVE   
+ FOR CRN GALFTCP1                                                         
+22.15.29 STC24480  +DXC3998  L ALCSLIVE CRN GALFTCP1 IP 216.113.154.36    
+ CONNECTION INACTIVE 
+
+FOR CRN XSOZHTH1  ---------------------------------------------   {ZDCOM N=(CRN),D} FORMULA
+
+ZDCOM N=GALFTCP1,D   ----IN FALLBCK....
+
+IF CRN IS In active we have to give below cmnd.
+
+{ZACOM N=CRN,LOGON}
+
+if it is inactive after 10 or 20 min we need to drop mail to 
+
+if it triggers continious we have raise p2 
+
+
+6)F regionname,SHOW LOGS
+F regionname,ALLOC DD=LOG2 SYSOUT=9 FREE=CLOSE---------------------------------LOGSWAP(CHECK LIST)
+F regionname,LOGSWAP
+
+
+7)---->NIT LOAD-------------------------NIT LOAD
+
+ in prc to chk (No ACTIVE UTLITIES) THE GIVE CMND  --o*nao1/start/xd. MSG IN WHITE CLR
+19.19.56  DXCROCL 19.20.03 NAO1 SCHEDULES LOADING STARTED  
+19.21.59  DXCROCL 19.22.06 NAO7 SCHEDULES LOADING COMPLETE.......................IN WHITE CLOUR IN ROC...
+
+--->Check ROC for message OAL SSIM ROLL OUT STARTED after NIT Load Completes   -----------------
+
+19.21.59  DXCROCL NAO00001I 19.22.06 OAL SSIM ROLL OUT STARTED IN white clr and  completed msg in green clr .
+
+19.28.02  DXCROCL NAO00002I 19.28.10 OAL SSIM ROLL OUT COMPLETE, READ=22067947,    ---------------------- 
+-
+
+
+
+
+8)SAVESPIN ERROR  If abends release next job    Y   N   N   N   19-JUN 03.00
+  03.00.29 JOB00183  IEF451I TNETPRNT STEP0001 - ENDED BY CC 0008 -TIME=03.00.29 ------Job failure ---
+ drop mail to       GERHARD BOWLES <Gerhard.Bowles@kyndryl.com>
+Cc:                 Julius Wentzel <Julius.Wentzel1@kyndryl.com>
+
+
+9).07.20.29 STC24480  +DXC3085 L ALCSLIVE PNL CHECK - SEND TIMING ERROR FOR
+EI0423/20JUN   -------------------------PNL ALERT.--------------------------INC0996522-P3  if not reach make it p2.
+
+INC0996522-P3 -by guhan.
+INC1030737--by Vijay to Third party.
+INC1091396 -P3 -+DXC3085 L ALCSLIVE PNL CHECK - SEND TIMING ERROR FOR   EI0423/15AUG  
+
+
+
+10.MQ CHANNEL ALERT:
+
+   STC22136  +CSQX544E +LIVE CSQXRCTL Messages for channel   
+   MQSL.AVIANP.PNR sent to                                           
+   remote dead-letter queue  
+
+    13.50.59 STC22136  +CSQX544E +LIVE CSQXRCTL Messages for channel         
+    MQSL.AVIANP.PNR sent to                                                 
+    remote dead-letter queue  
+
+*SOME TIME MQ CHANNEL INACTIVE.ALERTS WILL APPEAR.
+
+STEPS:
+
+1.SOLVE SCREEN:
+   option 13:TSOB IN SOLVE SCREEN --enter-enter-it will move to scsreen.
+
+
+  option:I-IBM----ENETR.
+  MQ -ENTER-ENTER
+it will show all mq channels.
+
+for scrolling :fn+f8--forward.  fn+f7--back.
+if it is run we need to take screen shot or copy  and send mail to the team. --INC1057915-p3 to third party team.
+if they are not replaying we need to make call out them.
+
+for comming back.fn+f3.
+
+go to PRC----ZDMQI---CHK Q DEPTH FOR PARTICULAR MQ eg:MQSL.AVIANP.PNR sent to--q depth.
+
+
+
+11.Mark job as completed.
+
+  a)fn+f6 
+
+JP
+schudle name.-----------( from solve screen Failed job.)---ABRARCH
+
+jon name--------from  chk failed job (ABRARCH)--JF---{ABRARCT2}  ERROR   C0012   23-DEC  01.05  23-DEC  01.05    23-DEC  01.06
+
+job number(job id)--------from 26  (ABRARCT2)--- we will find job id copy the number job id.(job(02414)).
+
+code---------0000 --- always zero.
+
+enter
+enter
+
+jon name=======ABRARCT2  ERROR   C0012   23-DEC  01.05  23-DEC  01.05    23-DEC  01.06
+
+
+
+13.14.20.36 STC22782  +DXC3050 L ALCSLIVE LINK TO REALEX DOWN - CONTACT ALCS 
+SUPPORT----give IN PRC  (CA/DISPLAY) CHK everything is in up and 0000 single occurence is fine.or else drop mail to alcs.
+
+14.schduler struck.
+
+go to schduler 
+
+option 1.
+/rmon
+
+go to scduler down fn f8 untill scduler
+
+near schdlr give 
+tri - to stop
+trr---- to start.
+
+
+2nd Method.---Manual Methos in SYSA Console.
+
+P SCHEDULR-----it will stop and will start auto (if not started then go for the 2nd command ( S SCHEDULR).  [
+S SCHEDULR
+
+SYSA     STC      SCHEDULR     ACTIVE   ACTIVE     AUTOMATED  OK---.---it is in active in resouce monitor./rmon
+
+
+if dcpypva& b jobs will be there 
+
+if B job completees A not then reshudle the job and run it.
+ drop mail to Scheduler got stuck.
+
+
+
+
+15.Check for successful completion of SPL / OPL
+
+
+ Will come in roc white colour.
+
+
+11.03.16  DXCROCL SUR00001I 11.03.15 SPC LOG PURGE STARTED
+11.03.16  DXCROCL SUR00001I 11.03.15 SPC LOG PURGE STARTED
+11.03.17  DXCROCL SPC LOG PURGE COMPLETE - ASK SCHEDULER TO RUN ASTRLD04 
+11.03.17  DXCROCL                                                        
+11.03.17  DXCROCL ZBE30001I 11.03.15 OPS LOG PURGE COMPLETE              
+11.03.33  DXCROCL 11.03.31 SPC PURGE STARTED 
+11.03.33  DXCROCL                            
+11.03.33  DXCROCL SPC PURGE COMPLETED        
+
+
+ 17.12.20.00.29 STC24480  +DXC3100I ALCSLIVE Long Queue Detected on CRN DXCROC-------------- NEED DO CHK IN PRC OR FLBK-(ZDCOM N=DXCROC,D).check 
+messages on queue pri 8--if q is increasing we have to reset the printer. (zacom n=crn,reset) we can chk in Alcs warning docmt.
+
+
+
+Hi Muthu,
+
+The ALCS warning Document clearly states that only single isolated messages can be ignored. But on 21st May though the alerts came with single time stamp we have received a flood of alerts. That the reason a P2 Ticket has been raised and a callout to ALCS Support team has been made. 
+
+With respect to the delay in alert handling, the alert has been escalated with the agreed time of 10mins but the mail was dropped from Gowtham account attached the mail for reference.
+
+Hope all the asks have been answered. Let me if further clarification needed on this issue.
